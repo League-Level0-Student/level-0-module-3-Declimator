@@ -27,21 +27,25 @@ package modulo;
 
 public class FizzBuzz {
 public static void main(String[] args) {
-	for(int i = 0; i <20; i++) {
+	for(int i = 1; i <21; i++) {
 		
-		int x = 1 + i;
-		if(x % 3 == 0) {
-			System.out.println("Fizz");
+		
+		if(i % 3 == 0) {
+			System.out.print("Fizz");
+			if(i % 5 ==0) {
+				System.out.println("Buzz");
+			}
+			else {
+				System.out.println(" ");
+			}
 		}
-		else if(x % 5 == 0) {
+		else if(i % 5 == 0) {
 			System.out.println("Buzz");
 		}
-		if(x % 3 == 0 | x % 5 == 0) {
-			System.out.println("FizzBuzz");
-		}
 		else {
-			System.out.println(x);
+			System.out.println(i);
 		}
+		
 	}
 
 }
